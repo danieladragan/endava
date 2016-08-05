@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
@@ -7,8 +8,8 @@ import java.util.List;
 
 public interface CommentWebServiceClient {
     Comment save(Comment comment) throws IOException;
-    Comment update(Comment comment);
-    Comment findById(Long commentId);
+    Comment update(Comment comment) throws IOException;
+    Comment findById(Long commentId) throws IOException;
     List<Comment> findAll();
-    void delete(Long commentId);
+    void delete(Long commentId) throws IOException;
 }

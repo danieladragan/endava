@@ -1,0 +1,29 @@
+h1{
+  color: red;
+}
+
+input{
+  border-radius: 25px;
+  background: #F0FFFF;
+  width: 200px;
+  height: 30px;
+}
+
+p{
+  color:blue;
+}
+
+select:focus , input:focus {
+  background-color: green;
+  color: white;
+}
+
+body {
+    background-image: url("c.jpg");
+
+}
+
+form{
+  direction: inherit;
+  align-items: center;
+}

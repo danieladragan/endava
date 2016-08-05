@@ -54,4 +54,15 @@ public class Comment {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", comment='" + comment + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }
